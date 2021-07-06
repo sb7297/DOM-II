@@ -50,3 +50,7 @@ for (let i = 0; i < btns.length; i++) {
         event.stopPropagation();
     });
 }
+
+document.addEventListener("keydown", (event) => {
+    document.querySelector('title').textContent = event.code;
+});
