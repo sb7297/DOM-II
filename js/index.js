@@ -7,6 +7,10 @@ for (let i = 0; i < navLinks.length; i++) {
     navLinks[i].addEventListener('pointerleave', (event) => {
         event.target.style.border = "";
     });
+    
+    navLinks[i].addEventListener('click', (event) => {
+        event.preventDefault();
+    });
 }
 
 window.addEventListener('resize', (event) => {
