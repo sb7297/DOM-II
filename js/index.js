@@ -20,3 +20,10 @@ window.addEventListener('load', (event) => {
 window.addEventListener('scroll', (event) => {
     document.querySelector('.logo-heading').style.color = "pink"; 
 });
+
+let btns = document.querySelectorAll('.destination .btn');
+for (let i = 0; i < btns.length; i++) {
+    btns[i].addEventListener('dblclick', (event) => {
+        event.target.style.backgroundColor = 'red';
+    });
+}
