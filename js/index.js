@@ -8,3 +8,7 @@ for (let i = 0; i < navLinks.length; i++) {
         event.target.style.border = "";
     });
 }
+
+window.addEventListener('resize', (event) => {
+    document.querySelector('body').textContent = "resizing is illegal"; 
+});
