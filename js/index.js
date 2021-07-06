@@ -12,3 +12,7 @@ for (let i = 0; i < navLinks.length; i++) {
 window.addEventListener('resize', (event) => {
     document.querySelector('body').textContent = "resizing is illegal"; 
 });
+
+window.addEventListener('load', (event) => {
+    document.querySelector('.logo-heading').textContent = "Loaded Bus"; 
+});
