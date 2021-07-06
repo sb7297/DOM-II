@@ -16,3 +16,7 @@ window.addEventListener('resize', (event) => {
 window.addEventListener('load', (event) => {
     document.querySelector('.logo-heading').textContent = "Loaded Bus"; 
 });
+
+window.addEventListener('scroll', (event) => {
+    document.querySelector('.logo-heading').style.color = "pink"; 
+});
