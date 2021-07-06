@@ -62,3 +62,8 @@ document.addEventListener("keydown", (event) => {
 document.addEventListener('paste', (event) => {
     document.querySelector('.intro h2').textContent = event.clipboardData.getData('text');
 });
+
+document.addEventListener('contextmenu', (event) => {
+    event.preventDefault();
+    document.querySelector('body').style.backgroundColor = 'purple';
+});
