@@ -53,11 +53,8 @@ for (let i = 0; i < btns.length; i++) {
 
 document.addEventListener("keydown", (event) => {
     document.querySelector('title').textContent = event.code;
-<<<<<<< HEAD
 });
 
 document.addEventListener('paste', (event) => {
     document.querySelector('.intro h2').textContent = event.clipboardData.getData('text');
-=======
->>>>>>> 745b08d (event 7, keydown)
 });
