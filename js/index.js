@@ -24,6 +24,29 @@ window.addEventListener('scroll', (event) => {
 let btns = document.querySelectorAll('.destination .btn');
 for (let i = 0; i < btns.length; i++) {
     btns[i].addEventListener('dblclick', (event) => {
+        event.stopPropagation();
         event.target.style.backgroundColor = 'red';
+    });
+}
+
+let destinations = document.querySelectorAll('.destination');
+console.log(destinations);
+for (let i = 0; i < destinations.length; i++) {
+    destinations[i].addEventListener('click', (event) => {
+        event.stopPropagation();
+        event.target.style.backgroundColor = 'green';
+    });
+}
+
+/*
+the following prevents clicking the button turning it green
+the desired behavior is:
+1. single clicking a button does nothing
+2. double clicking a button turns its background red
+3. single clicking any other element in a .destination div turns its background green
+*/
+for (let i = 0; i < btns.length; i++) {
+    btns[i].addEventListener('click', (event) => {
+        event.stopPropagation();
     });
 }
